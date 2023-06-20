@@ -73,6 +73,34 @@
             transition: all 0.05s;
             transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 
+        } 
+        /* Responsive adjustments */
+        @media only screen and (max-width: 768px) {
+            .clock {
+                width: 80%;
+                max-width: 20rem;
+                height: 80vw;
+                max-height: 20rem;
+            }
+
+            .hand {
+                height: 2%;
+                max-height: 4px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .clock {
+                width: 90%;
+                max-width: 15rem;
+                height: 90vw;
+                max-height: 15rem;
+            }
+
+            .hand {
+                height: 1%;
+                max-height: 2px;
+            }
         }
     </style>
     <script>
